@@ -43,7 +43,8 @@ function Platillos() {
             </div>
           </div>
         </div>
-        <button className="btn-masPlatillos">mostrar más platillos</button>
+        <button className="btn-masPlatillos">mostrar
+        más platillos</button>
       </div>
     </div>
   );
