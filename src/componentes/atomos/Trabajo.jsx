@@ -15,8 +15,9 @@ function Trabajo() {
           <Col xs={12} md={6}>
             <h2 className="txt-NuestroTrabajo-titulo">nuestro trabajo</h2>
             <p className="txt-NuestroTrabajo-Descripcion">
-              La mejor atención para nuestros clientes y la mayor disposición
-              para que nuestros clientes queden satisfechos.
+              La mejor atención para nuestros clientes y la mayor
+              disposición para que nuestros clientes queden
+              satisfechos.
             </p>
           </Col>
         </Row>
