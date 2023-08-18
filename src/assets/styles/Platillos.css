@@ -1,0 +1,64 @@
+.platillos {
+}
+
+.Pla1 {
+}
+
+.Pla2 {
+}
+
+.txt-nombrePlatillo {
+  margin-top: 15px;
+}
+
+.fotoPlatillos {
+  max-width: 95%;
+}
+
+.fotoPlatillos3 {
+  max-width: 87%;
+}
+
+.containerPlatillos {
+  margin-top: 80px;
+  margin-block-end: 82px;
+}
+
+.btn-masPlatillos {
+  width: 224px;
+  height: 76px;
+  background-color: #4b4124;
+  color: #fff;
+  border-radius: 38px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.61);
+  font-family: Atlane;
+  font-size: 20px;
+  background-image: url("../img/iconoPoots.png");
+
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: left;
+  transition: transform 0.3s;
+}
+
+.btn-masPlatillos:hover {
+  transform: scale(1.1);
+}
+
+.text-break {
+  font-size: 32px;
+  color: #3a3a3a;
+}
+
+@media (max-width: 768px) {
+  .text-break {
+    font-size: 100%;
+  }
+
+  .fotoPlatillos,
+  .fotoPlatillos3 {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+}
