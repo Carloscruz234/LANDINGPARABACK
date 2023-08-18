@@ -1,4 +1,3 @@
-
 import Header2 from "../componentes/atomos/Header2";
 import PortadaBienvenidos from "../componentes/atomos/PortadaBienvenidos";
 import Comida from "../componentes/atomos/Comida";
@@ -12,23 +11,25 @@ import CarouselPortada from "../componentes/atomos/CarouselPortada";
 import AcercaDe from "../componentes/atomos/AcercaDe";
 import Footer from "../componentes/atomos/Footer";
 import AlertError from "../componentes/atomos/AlertError";
+import Header3 from "../componentes/atomos/Header3";
 
 function LandingPage() {
   return (
     <>
-      <Header2></Header2>
+{/*       <Header2></Header2> */}
+      <Header3></Header3>
       <PortadaBienvenidos></PortadaBienvenidos>
       <Comida></Comida>
       <Trabajo></Trabajo>
       <Platillos></Platillos>
       <ExcelentesInstalaciones></ExcelentesInstalaciones>
-      <Visitanos/>
+      <Visitanos />
       <GaleriaTxt></GaleriaTxt>
       <Galeria></Galeria>
       <AcercaDe></AcercaDe>
-{/*       <CarouselPortada></CarouselPortada> */}
-      <Footer></Footer>
-{/*       <AlertError></AlertError> */}
+      {/*       <CarouselPortada></CarouselPortada> */}
+      {<Footer></Footer>}
+      {/*       <AlertError></AlertError> */}
     </>
   );
 }

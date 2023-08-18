@@ -24,13 +24,13 @@
   font-family: Atlane;
 }
 
-.image-content {
+.image-content-comida {
   flex: 2;
   text-align: right;
   margin-block-end: 77px;
 }
 
-.image-content img {
+.image-content-comida img {
   max-width: 100%;
   height: auto;
   border-radius: 135px;
@@ -55,16 +55,16 @@
   }
 
   .txt-descripcionComidaMexicana {
-    font-size: 18px;
-    margin-top: 10px;
+    font-size: 22px;
+    margin-top: 30px;
   }
 
-  .image-content {
+  .image-content-comida {
     text-align: center;
     margin-top: 20px;
   }
 
-  .image-content img {
-    border-radius: 50%;
+  .image-content-comida img {
+    border-radius: 14%;
   }
 }

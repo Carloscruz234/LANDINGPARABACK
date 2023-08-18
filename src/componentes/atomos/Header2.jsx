@@ -12,7 +12,7 @@ function Header2() {
         <li>
           <a
             href="#inicio"
-            className="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-red botonHeader"
+            className=" botonHeader"
           >
             inicio
           </a>
@@ -20,7 +20,7 @@ function Header2() {
         <li>
           <a
             href="#acercade"
-            className="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-red botonHeader"
+            className=" botonHeader"
           >
             acerca de
           </a>
@@ -28,7 +28,7 @@ function Header2() {
         <li>
           <a
             href="#menu"
-            className="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-red botonHeader"
+            className=" botonHeader"
           >
             menú
           </a>
@@ -36,7 +36,7 @@ function Header2() {
         <li>
           <a
             href="#contacto"
-            className="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-red botonHeader"
+            className=" botonHeader"
           >
             contacto
           </a>

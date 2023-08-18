@@ -1,22 +1,23 @@
-.platillos {
-}
-
-.Pla1 {
-}
-
-.Pla2 {
-}
-
 .txt-nombrePlatillo {
   margin-top: 15px;
 }
 
 .fotoPlatillos {
   max-width: 95%;
+  transition: transform 0.3s;
+}
+
+.fotoPlatillos:hover {
+  transform: scale(1.1);
 }
 
 .fotoPlatillos3 {
   max-width: 87%;
+  transition: transform 0.3s;
+}
+
+.fotoPlatillos3:hover {
+  transform: scale(1.1);
 }
 
 .containerPlatillos {
@@ -50,15 +51,30 @@
   color: #3a3a3a;
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .text-break {
     font-size: 100%;
   }
 
-  .fotoPlatillos,
-  .fotoPlatillos3 {
+  .fotoPlatillos{
     max-width: 100%;
     display: block;
     margin: 0 auto;
+    padding-bottom: 40px;
+  }
+
+
+  .fotoPlatillos3 {
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+
+  .btn-masPlatillos {
+    width: 200px;
+    height: 70px;
+    font-size: 18px;
+    background-size: 40px 40px;
   }
 }
