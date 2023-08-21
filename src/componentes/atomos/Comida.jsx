@@ -7,8 +7,10 @@ function Comida() {
       <div className="text-content">
         <h2 className="txt-ComidaMexicana">comida regional mexicana</h2>
         <p className="txt-descripcionComidaMexicana">
-          las mejores comidas de buffet mexicano, {/* <br/> */} comidas tradicionales de toda la republica {/* <br /> */}
-          mexicana para el buen gusto de nuestros {/* <br /> */} clientes la mejor comida a la disposición de {/* <br /> */}
+          las mejores comidas de buffet mexicano, <br /> comidas tradicionales
+          de toda la republica <br />
+          mexicana para el buen gusto de nuestros <br /> clientes la mejor
+          comida a la disposición de <br />
           todos!
         </p>
       </div>

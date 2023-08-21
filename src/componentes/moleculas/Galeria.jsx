@@ -22,11 +22,11 @@ function Galeria() {
   const visibleImages = images.slice(currentIndex, currentIndex + 3);
 
   const goToPreviousSlide = () => {
-    setCurrentIndex(Math.max(currentIndex - 1, 0));
+    setCurrentIndex(currentIndex === 0 ? images.length - 3 : currentIndex - 1);
   };
 
   const goToNextSlide = () => {
-    setCurrentIndex(Math.min(currentIndex + 1, images.length - 3));
+    setCurrentIndex(currentIndex === images.length - 3 ? 0 : currentIndex + 1);
   };
 
   return (

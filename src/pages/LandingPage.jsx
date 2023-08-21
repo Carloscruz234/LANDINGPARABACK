@@ -7,16 +7,13 @@ import ExcelentesInstalaciones from "../componentes/atomos/ExcelentesInstalacion
 import GaleriaTxt from "../componentes/atomos/GaleriaTxt";
 import Galeria from "../componentes/moleculas/Galeria";
 import Visitanos from "../componentes/moleculas/Visitanos";
-import CarouselPortada from "../componentes/atomos/CarouselPortada";
 import AcercaDe from "../componentes/atomos/AcercaDe";
 import Footer from "../componentes/atomos/Footer";
-import AlertError from "../componentes/atomos/AlertError";
 import Header3 from "../componentes/atomos/Header3";
 
 function LandingPage() {
   return (
     <>
-{/*       <Header2></Header2> */}
       <Header3></Header3>
       <PortadaBienvenidos></PortadaBienvenidos>
       <Comida></Comida>
@@ -27,9 +24,7 @@ function LandingPage() {
       <GaleriaTxt></GaleriaTxt>
       <Galeria></Galeria>
       <AcercaDe></AcercaDe>
-      {/*       <CarouselPortada></CarouselPortada> */}
-      {<Footer></Footer>}
-      {/*       <AlertError></AlertError> */}
+      <Footer></Footer>
     </>
   );
 }

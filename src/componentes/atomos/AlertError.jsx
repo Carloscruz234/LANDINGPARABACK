@@ -1,34 +1,20 @@
-import { useState } from "react";
+import FormaAlerta from "../../assets/img/forma1.png";
 
-const AlertError = () => {
-  const [promptVisible, setPromptVisible] = useState(false);
-  const [inputValue, setInputValue] = useState("");
-  const [result, setResult] = useState("");
+import { GiCancel } from "react-icons/gi";
 
-  const handleShowPrompt = () => {
-    setPromptVisible(true);
-  };
+import "../../assets/styles/AlertError.css";
 
-  const handlePromptSubmit = () => {
-    setResult(`Respuesta: ${inputValue}`);
-    setPromptVisible(false);
-  };
-
+function AlertError() {
   return (
-    <div>
-      <button onClick={handleShowPrompt}>Mostrar</button>
-      {promptVisible && (
-        <div className="prompt">
-          <input
-            type="text"
-            value={inputValue}
-            onChange={(e) => setInputValue(e.target.value)}
-          />
-          <button onClick={handlePromptSubmit}>Aceptar</button>
-        </div>
-      )}
-      <p>{result}</p>
+    <div class="error">
+      <div class="error__icon">
+        <img src={FormaAlerta} className="FormaDeAlerta" />
+      </div>
+      <div class="error__title">error al registrarse</div>
+      <div class="error__close">
+        <GiCancel />
+      </div>
     </div>
   );
-};
+}
 export default AlertError;
