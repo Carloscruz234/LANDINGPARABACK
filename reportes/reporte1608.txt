@@ -1,0 +1,4 @@
+Como reporte de practica, el dia de hoy miercoles 16 de agosto continuamos con el codigo que venimos trabajando, esta vez me toco crear
+el componente de la galeria el cual costo crearlo, es de remarcar que todavia no esta terminado y todavia se va a seguir mejorando,
+pero hoy en si se avanzo en la logica del carousel, de igualmanera trabajamos con el codigo resposivo de componentes tales como lo fue
+el header, comida, trabajo y platillos.

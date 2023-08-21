@@ -1,0 +1,4 @@
+Como reporte de practica, el dia de hoy viernes 18 de agosto continuamos trabajando con el objetivo de lograr que la landing page
+sea responsiva, por lo cual trabajamos practicamente hoy en los archivos css de cada .jsx afortunadamente si logro un avance
+positivo, ya que la mayoria de los componentes quedaron responsivos a a excepcion de la molecula Visitanos que esa nos queda pendiente
+para continuar la otra semana.

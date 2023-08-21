@@ -1,0 +1,4 @@
+Como reporte de practica, el dia de hoy lunes 14 de agosto continuamos trabajando con el poco codigo que teniamos avanzado, creando
+los nuevos componentes tales fueron la portadaBienvenidos, platillos, nuestrotrabajo, comida con su respectivo css y de acuerdo al
+diseño de figma que tenemos pensado y de igual manera modificamos cosas faltantes del header y footer. Del mismo modo aprendi cosas
+nuevas de git siendo especificos en como trabajar con las ramas, ya que tuve algunos problemas con el manejo de las ramas.

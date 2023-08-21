@@ -1,0 +1,4 @@
+Como reporte de practica, el dia de hoy jueeves 17 de agosto continuamos trabajando con el codigo que tenemos, especialmente hoy
+trabajamos mas en la parte del css, exactamente en los componentes del header, platillos, excelentesInstalaciones y galeria,
+de manera que nos enfocamos en la parte del diseño responsivo y se mejoro un poco el componente de excelentesInstalaciones,
+dejando un avance para seguir continuando mañana.

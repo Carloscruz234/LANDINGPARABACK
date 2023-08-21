@@ -1,0 +1,6 @@
+Como reporte de practica, el dia de hoy martes 15 de agosto continuamos con el codigo que ya tenemos, creando nuevos componentes como
+lo son ExcelentesInstalaciones y AcercaDe. Del mismo modo arreglamos ciertas cosas que no habian quedado en un estado deseado el dia
+de ayer como lo son botones, imagenes, colores o iconos y ciertos detalles del componente NuestroTrabajo ya que se reemplazo y se dejo
+de una manera mas optima, caso similar al footer, que las dimensiones no eran las mismas que el diseño de figma. Como punto final
+queda pendiente terminar los ultimos detalles del ExcelentesInstalaciones, AcercaDe y comenzar con el ultimo componente que es
+la Galeria.
