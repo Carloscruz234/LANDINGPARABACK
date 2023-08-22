@@ -51,7 +51,7 @@ function Visitanos() {
       color: isActive ? "#C11B5C" : "#25365C",
       fontSize: isActive ? "34px" : "30px",
       margin: isActive ? "60px" : "60px",
-      top: isActive ? "-40px" : "-40px"
+      top: isActive ? "-40px" : "-40px",
     };
   };
 
@@ -62,7 +62,7 @@ function Visitanos() {
     "área de juegos",
     "baños",
     "transportes seguros",
-    "reconocimiento facial"
+    "reconocimiento facial",
   ];
 
   return (
@@ -70,7 +70,7 @@ function Visitanos() {
       <Row className="centrado-visitanos">
         <Col md={4} className="position-relative">
           <div className="d-flex flex-column h-100 ">
-            <ul>
+            <ul className="txtx-visitanos">
               {images.map((_, index) => (
                 <li
                   key={index}

@@ -56,13 +56,12 @@
     font-size: 100%;
   }
 
-  .fotoPlatillos{
+  .fotoPlatillos {
     max-width: 100%;
     display: block;
     margin: 0 auto;
     padding-bottom: 40px;
   }
-
 
   .fotoPlatillos3 {
     max-width: 90%;

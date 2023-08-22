@@ -5,7 +5,7 @@ function NuestroTrabajo() {
   return (
     <div className="text-image-container-nt2">
       <div className="image-content-nt2">
-        <img src={ImagenNuestroTrabajo} className="foto-trabajo"/>
+        <img src={ImagenNuestroTrabajo} className="foto-trabajo" />
       </div>
       <div className="text-content-nt2">
         <h2 className="txt-nt">nuestro trabajo</h2>

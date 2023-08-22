@@ -5,8 +5,6 @@ import LogoRestaPoots from "../../assets/img/logo.png";
 import "../../assets/styles/Header3.css";
 
 function Header3() {
-  const handleShow = () => setShow(true);
-
   return (
     <nav class="navbar navbar-expand-lg navbar-white bg-white">
       <div class="container-fluid">
@@ -32,17 +30,17 @@ function Header3() {
               </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#conocenos">
+              <a class="nav-link " href="#acercade">
                 acerca de
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#footer">
+              <a class="nav-link " href="#menu">
                 menú
               </a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link " onClick={handleShow}>
+              <a class="nav-link " href="#contacto">
                 contacto
               </a>
             </li>

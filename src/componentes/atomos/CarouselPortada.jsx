@@ -1,6 +1,6 @@
 import Carousel from "react-bootstrap/Carousel";
-import Imagen1 from "../../assets/img/logo.png"
-import '../../assets/styles/Carousel.css'
+import Imagen1 from "../../assets/img/logo.png";
+import "../../assets/styles/Carousel.css";
 
 function CarouselPortada() {
   return (

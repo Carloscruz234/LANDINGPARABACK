@@ -6,10 +6,9 @@ function PortadaBienvenidos() {
   return (
     <div className="background-image-container">
       <div className="overlay">
-        {/*         <h1>Logo en blanco</h1> */}
-        <img src={LogoPootsBlanco} />
+        <img className="logo" src={LogoPootsBlanco} alt="Logo Poots" />
         <button className="btn-bienvenidos">
-          <img src={IconoPoots} />
+          <img src={IconoPoots} alt="Icono Poots" />
           explorar
         </button>
       </div>

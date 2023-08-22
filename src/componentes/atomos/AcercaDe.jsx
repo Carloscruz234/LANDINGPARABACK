@@ -7,7 +7,6 @@ import { MdPayment } from "react-icons/md";
 function AcercaDe() {
   return (
     <div className="rectangulo">
-
       <div className="textoimagen">
         <div className="container-text-center">
           <div className="zumzum">
@@ -92,7 +91,6 @@ function AcercaDe() {
           </div>
         </div>
       </div>
-
     </div>
   );
 }

@@ -14,99 +14,125 @@ import { PiTiktokLogoFill } from "react-icons/pi";
 import { BiLogoFacebookCircle } from "react-icons/bi";
 import RedesSociales from "./RedesSociales";
 
-
-
 function Footer() {
-
   const [formData, setFormData] = useState({
     name: "",
     telefono: "",
-    correo: ""
+    correo: "",
   });
-  
+
   const formDataF = useRef();
 
-  const handlerClick = (e) => {
+  const handlerClick = async (e) => {
     e.preventDefault();
     const formData = new FormData(formDataF.current);
     const userEmail = formData.get("correo");
 
-    fetch("http://52.70.189.119:3000/Users")
-      .then((response) => response.json())
-      .then((correosExistentes) => {
-        const listaCorreos = correosExistentes.map((usuario) => usuario.Correo);
-
-        if (listaCorreos.includes(userEmail)) {
-          Swal.fire({
-            icon: "error",
-            title: "Error al Registrarse",
-            text: `El correo ${userEmail} ya está en uso.`,
-            width: "960"
-          });
-        } else {
-          let URI = "http://52.70.189.119:3000/Users";
-          let options = {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-              Nombre: formData.get("name"),
-              Telefono: formData.get("telefono"),
-              Correo: userEmail
-            })
-          };
-
-          fetch(URI, options)
-            .then((response) => response.json())
-            .then((data) => {
-              if (data.message === "Usuario registrado exitosamente") {
-                setFormData({
-                  name: "",
-                  telefono: "",
-                  correo: ""
-                });
-
-                Swal.fire({
-                  position: "top-center",
-                  height: 600,
-                  width: 614,
-                  padding: 100,
-                  imageUrl:
-                    "https://www.freeiconspng.com/thumbs/success-icon/success-icon-10.png",
-                  imageWidth: "200",
-                  imageHeight: "200",
-                  color: "#4B4124",
-                  title: "¡Registro exitoso!",
-                  text: JSON.stringify("Bienvenido"),
-                  confirmButtonText: "Aceptar",
-                  confirmButtonColor: "#568943"
-                });
-              } else {
-                Swal.fire({
-                  icon: "error",
-                  title: "Error al registrar usuario",
-                  text: data.error
-                });
-              }
-            })
-            .catch((error) => {
-              console.error("Error:", error);
-            });
-        }
-      })
-      .catch((error) => {
-        console.error("Error:", error);
+    if (
+      !formData.get("name") ||
+      !formData.get("telefono") ||
+      !formData.get("correo")
+    ) {
+      Swal.fire({
+        icon: "error",
+        title: "Campos incompletos",
+        text: "Por favor, complete todos los campos antes de enviar el formulario.",
+        width: "960",
       });
-  };
+      return;
+    }
 
+    try {
+      const response = await fetch("http://52.70.189.119:3000/Users");
+      if (!response.ok) {
+        Swal.fire({
+          icon: "error",
+          title: "API no disponible",
+          text: "La API no está respondiendo correctamente.",
+          width: "960",
+        });
+        return;
+      }
+
+      const correosExistentesResponse = await fetch(
+        "http://52.70.189.119:3000/Users"
+      );
+      const correosExistentes = await correosExistentesResponse.json();
+      const listaCorreos = correosExistentes.map((usuario) => usuario.Correo);
+
+      if (listaCorreos.includes(userEmail)) {
+        Swal.fire({
+          icon: "error",
+          title: "Error al Registrarse",
+          text: `El correo  ${userEmail}  ya está en uso.`,
+          width: "960",
+        });
+      } else {
+        let URI = "http://52.70.189.119:3000/Users";
+        let options = {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            Nombre: formData.get("name"),
+            Telefono: formData.get("telefono"),
+            Correo: userEmail,
+          }),
+        };
+        fetch(URI, options)
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.message === "Usuario registrado exitosamente") {
+              setFormData({
+                name: "",
+                telefono: "",
+                correo: "",
+              });
+              Swal.fire({
+                position: "top-center",
+                height: 600,
+                width: 614,
+                padding: 100,
+                imageUrl:
+                  "https://www.freeiconspng.com/thumbs/success-icon/success-icon-10.png",
+                imageWidth: "200",
+                imageHeight: "200",
+                color: "#4B4124",
+                title: "¡Registro exitoso!",
+                text: JSON.stringify("Bienvenido"),
+                confirmButtonText: "Aceptar",
+                confirmButtonColor: "#568943",
+              });
+            } else {
+              Swal.fire({
+                icon: "error",
+                title: "Error al registrar usuario",
+                text: data.error,
+              });
+            }
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      Swal.fire({
+        icon: "error",
+        title: "Error al acceder a la API",
+        text: "Ha ocurrido un error al intentar acceder a la API.",
+        width: "960",
+      });
+    }
+  };
   return (
     <div className="fondo-footer">
       {/*<div class="d-flex justify-content-around"> */}
       <div className="d-flex flex-wrap justify-content-center">
         <div className="formulario column">
           <div className="p-2">
-             <Form ref={formDataF}>
+            <Form ref={formDataF}>
               <Form.Group className="mb-3" controlId="formGroupEmail">
                 <Form.Label className="txt-formularios-nom">Nombre:</Form.Label>
                 <Form.Control
@@ -120,7 +146,9 @@ function Footer() {
                 />
               </Form.Group>
               <Form.Group className="mb-3" controlId="formGroupPassword">
-                <Form.Label className="txt-formularios-nom">Teléfono:</Form.Label>
+                <Form.Label className="txt-formularios-nom">
+                  Teléfono:
+                </Form.Label>
                 <Form.Control
                   type="number"
                   id="telefono"
@@ -162,7 +190,7 @@ function Footer() {
           <div className="p-2">
             <div className="TC">
               <span>
-                <MdCall/> contacto
+                <MdCall /> contacto
               </span>
             </div>
             <Container>
@@ -197,8 +225,11 @@ function Footer() {
             <Container>
               <div className="dire">
                 <Row>
-                  <Col>2a Norte #26 entre 5a y 6a<br/> 
-                  Oriente Col. Centro</Col>
+                  <Col>
+                    2a Norte #26 entre 5a y 6a
+                    <br />
+                    Oriente Col. Centro
+                  </Col>
                 </Row>
               </div>
             </Container>
@@ -214,12 +245,11 @@ function Footer() {
               <RedesSociales></RedesSociales>
             </Container>
 
-            <div><span></span></div>
-
+            <div>
+              <span></span>
+            </div>
           </div>
         </div>
-
-
       </div>
     </div>
   );

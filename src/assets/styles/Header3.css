@@ -22,7 +22,6 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .navbar-nav.ms-auto .nav-link {
     display: flex;
-    /*     margin-left: 33px; */
     margin: auto;
   }
 }
@@ -31,7 +30,6 @@
   .navbar-nav.ms-auto .nav-link {
     display: flex;
     font-size: 18px;
-/*     margin: auto; */
   }
 }
 

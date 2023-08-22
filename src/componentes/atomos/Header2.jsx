@@ -10,34 +10,22 @@ function Header2() {
 
       <ul className="nav-links">
         <li>
-          <a
-            href="#inicio"
-            className=" botonHeader"
-          >
+          <a href="#inicio" className=" botonHeader">
             inicio
           </a>
         </li>
         <li>
-          <a
-            href="#acercade"
-            className=" botonHeader"
-          >
+          <a href="#acercade" className=" botonHeader">
             acerca de
           </a>
         </li>
         <li>
-          <a
-            href="#menu"
-            className=" botonHeader"
-          >
+          <a href="#menu" className=" botonHeader">
             menú
           </a>
         </li>
         <li>
-          <a
-            href="#contacto"
-            className=" botonHeader"
-          >
+          <a href="#contacto" className=" botonHeader">
             contacto
           </a>
         </li>

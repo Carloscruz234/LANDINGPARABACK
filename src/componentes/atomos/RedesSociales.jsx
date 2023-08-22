@@ -41,7 +41,6 @@ function RedesSociales() {
           </a>
         </li>
       </ul>
-
     </button>
   );
 }
