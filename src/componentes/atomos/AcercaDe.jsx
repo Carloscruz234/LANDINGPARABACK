@@ -6,7 +6,7 @@ import { MdPayment } from "react-icons/md";
 
 function AcercaDe() {
   return (
-    <div className="rectangulo">
+    <div className="rectangulo" id="acercade">
       <div className="textoimagen">
         <div className="container-text-center">
           <div className="zumzum">

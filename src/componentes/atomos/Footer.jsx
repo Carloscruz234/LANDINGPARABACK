@@ -127,7 +127,7 @@ function Footer() {
     }
   };
   return (
-    <div className="fondo-footer">
+    <div id="contacto" className="fondo-footer">
       {/*<div class="d-flex justify-content-around"> */}
       <div className="d-flex flex-wrap justify-content-center">
         <div className="formulario column">
