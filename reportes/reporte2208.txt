@@ -1,0 +1,5 @@
+Como reporte de practica de lo realizado el dia de hoy martes 22 de agosto, terminamos lo que teniamos pendiente en este caso se trataba
+del componente (acerca de) el cual el objetivo era poder hacerlo responsivo lo cual se pudo lograr. Una vez terminado ese componente
+decidimos pasar nuestro repositorio de frontend a el encargado de backend para que pueda implementar su trabajo con nuestro formulario
+de contacto, del mismo modo limpiamos nuestro codigo de manera que no contenga codigo comentado. Y asi fue como pudimos concluir
+con nuestro proyecto en tiempo y forma.
